@@ -1,0 +1,48 @@
+<html>
+    <header>
+        <style>
+            table {
+            border-collapse:collapse;
+            border-spacing:0;
+            margin-bottom:15px;
+            width:100%;
+            }
+            th, tr, td {
+            vertical-align:middle;
+            }
+            .sticky-header th, .sticky-table th {
+            border-bottom:3px solid #ccc;
+            padding-right:1em;
+            text-align:left;
+            }
+            table {
+            background:#ececec;
+            border:1px solid #bbbbbb;
+            }
+            th {
+            background:#2E3D4A;
+            border-right:1px solid #c8c7c7;
+            color:#fff;
+            font-weight:bold;
+            padding:10px;
+            }
+            td {
+            background:#FFF;
+            border:1px solid #DBDBDB;
+            color:#747474;
+            padding:10px;
+            text-align:left;
+            }    
+        </style>
+    </header>
+    <body>
+        <div>
+            <a href="/firms">К списку компаний</a>
+        </div>
+        <div>
+            <table>
+                {{table|safe}}
+            </table>
+        </div>
+    </body>
+</html>

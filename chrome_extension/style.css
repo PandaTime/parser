@@ -1,0 +1,46 @@
+body {
+    margin: 10px;
+    white-space: nowrap;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+#container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data-section {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+/* #listCollapse {
+    display: flex;
+    flex-direction: column; */
+/* } */
+
+.helper-info {
+    line-height: 10px;
+    font-size: 12px;
+}
+.form-group:first-child {
+    padding-top: 1rem;
+}
+
+.toggle-btn {
+    width: 100%;
+}
+
+section {
+    padding: 1.5rem;
+    border: solid #f7f7f9;
+    border-width: .2rem .2rem 0 .2rem;
+    margin: 0 -15px;
+}
+section:last-child {
+    border-bottom-width: .2rem;
+}

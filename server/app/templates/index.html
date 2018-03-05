@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 2rem;  
+            }
+            .results {
+                font-size: large;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>Получить экскель файл можно кликнув <a href="/get-data">сюда</a></div>
+        <div>Чтобы добавить новые записи нужно:
+            <ol>
+                <li>Установить Chrome Extension</li>
+                <li>Открыть <a href="https://usrinfo.minjust.gov.ua/edr.html">этот</a> линк(на других работать не будет)</li>
+                <li><i>Добавить во вкладку "Update IDS List" список айдишек*</i></li>
+                <li>Пройти капчу</li>
+                <li>Нажать "Parse Page"</li>
+                <li><i>Нажать "Next Page"</i></li>
+            </ol>
+            <div>
+                Примечания:<br>
+                <i>italic = опциональный шаг</i>
+                <i>*Прим.: каждый раз нажимая "Parse Page" с него будет убирать текущая айдишка.</i>
+            </div>
+        </div>
+        <div class="results">
+            Количество данных в БД: <span>{{ parsedAmount }}</span><br>
+            Более детальная инфа <a href="/firms">тут</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            document.onload = () => {}
+        </script>
+    </head>
+    <body>
+        <a href="/">
+            На главную</a>
+        <ul>
+            {% for firm in firms %}
+            <li>
+                <a href="/firm/{{ firm.firmId }}">{{ firm.firmId }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
